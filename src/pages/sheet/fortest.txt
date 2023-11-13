@@ -1,0 +1,196 @@
+
+                <MyCol className={"qustionCol"} span={24} >
+                    <Card
+                        hoverable
+                        style={{
+                            width: "100%",
+                        }}
+                    >
+                        <Title level={3}>Question 1</Title>
+                        <CorrectionQustion />
+                    </Card>
+
+                </MyCol>
+
+                <MyCol className={"qustionCol"} span={24} >
+                    <Card
+                        hoverable
+                        style={{
+                            width: "100%",
+                        }}
+                    >
+                        <Title level={3}>Question 2</Title>
+
+                        <LinkingQustionComponent listData={linking1Q} idQ={"1"} />
+                    </Card>
+                </MyCol>
+
+
+                <MyCol className={"qustionCol"} span={24} >
+                    <Card
+                        hoverable
+                        style={{
+                            width: "100%",
+                        }}
+                    >
+                        <Title level={3}>Question 3</Title>
+
+                        <LinkingQustionComponent listData={linking2Q} idQ={"2"} />
+                    </Card>
+                </MyCol>
+
+
+                <MyCol className={"qustionCol"} span={24} >
+                    <Card
+                        hoverable
+                        style={{
+                            width: "100%",
+                        }}
+                    >
+                        <Title level={3}>Question 4</Title>
+                        <FabricComponent />
+                    </Card>
+                </MyCol>
+
+
+                <MyCol className={"qustionCol"} span={24} >
+                    <Card
+                        hoverable
+                        style={{
+                            width: "100%",
+                        }}
+                    >
+                        <Title level={3}>Question 5</Title>
+
+                        <SortingQustion />
+                    </Card>
+                </MyCol>
+
+
+                <MyCol className={"qustionCol"} span={24} >
+                    <Card
+                        hoverable
+                        style={{
+                            width: "100%",
+                        }}
+                    >
+                        <Title level={3}>Question 6</Title>
+
+                        <SelectTrueMultiQustion type={"multi"} />
+                    </Card>
+                </MyCol>
+
+
+
+                <MyCol className={"qustionCol"} span={24} >
+                    <Card
+                        hoverable
+                        style={{
+                            width: "100%",
+                        }}
+                    >
+                        <Title level={3}>Question 7</Title>
+                        <SelectTrueMultiQustion type={"single"} />
+                    </Card>
+                </MyCol>
+
+
+                <MyCol className={"qustionCol"} span={24} >
+                    <Card
+                        hoverable
+                        style={{
+                            width: "100%",
+                        }}
+                    >
+                        <Title level={3}>Question 8</Title>
+                        <FreeQustion />
+                    </Card>
+                </MyCol>
+
+
+
+
+                <MyCol className={"qustionCol"} span={24} >
+                    <Card
+                        hoverable
+                        style={{
+                            width: "100%",
+                        }}
+                    >
+                        <Title level={3}>Question 9</Title>
+                        <VideoPlayer />
+                    </Card>
+                </MyCol>
+
+                <MyCol className={"qustionCol"} span={24} >
+                    <Card
+                        hoverable
+                        style={{
+                            width: "100%",
+                        }}
+                    >
+                        <Title level={3}>Question 10</Title>
+                        <VoiceRecorder />
+                    </Card>
+                </MyCol>
+
+                <MyCol className={"qustionCol"} span={24} >
+                    <Card
+                        hoverable
+                        style={{
+                            width: "100%",
+                        }}
+                    >
+                        <Title level={3}>Question 11</Title>
+                        <DragThingsToBoxesDemo />
+                    </Card>
+                </MyCol>
+
+
+
+
+                <MyCol className={"qustionCol"} span={24} >
+                    <Card
+                        hoverable
+                        style={{
+                            width: "100%",
+                        }}
+                    >
+                        <Title level={3}>Question 12</Title>
+                        <PuzzleQustion
+                            rows={3}
+                            columns={3}
+                            img={puzzel}
+                        />
+                    </Card>
+                </MyCol>
+
+
+                <MyCol className={"qustionCol"} span={24} >
+                    <Card
+                        hoverable
+                        style={{
+                            width: "100%",
+                        }}
+                    >
+                        <Title level={3}>Question 12</Title>
+                        <PuzzleQustion
+                            rows={4}
+                            columns={4}
+                            img={puzell2}
+                        />
+                    </Card>
+                </MyCol>
+
+
+                <MyCol className={"qustionCol"} span={24} >
+                    <Card
+                        hoverable
+                        style={{
+                            width: "100%",
+                        }}
+                    >
+                        <Title level={3}>Question 13</Title>
+                        <AudioPlayer />
+                    </Card>
+                </MyCol>

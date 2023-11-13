@@ -1,0 +1,105 @@
+/* for the heading  */
+
+.tag {
+  text-align: center;
+  color: green;
+  margin: 2rem;
+}
+
+/* for the jigsaw puzzle container */
+
+.jigsaw-puzzle {
+  /*width: 38%;*/
+  height: 38%;
+  border: 2px solid black;
+  /*margin: auto;*/
+  box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.25);
+}
+
+.DropTargetContainer {
+  min-height: 300px;
+  min-width: 300px;
+  border: solid 1px black;
+  padding: 15px;
+}
+
+.connectPoint {
+  opacity: 0.2;
+  width: 15px;
+  height: 15px;
+}
+
+.connectPoint:hover {
+  opacity: 0.6;
+  width: 30px;
+  height: 30px;
+}
+
+.qustionViewCol {
+  min-height: 150px;
+  border: solid 1px gray;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-radius: 15px;
+  padding-bottom: 15px;
+}
+
+.RowCorrection:hover {
+  background-color: rgba(51, 146, 205, 0.071);
+}
+
+.SortibleItemSortingQ {
+  padding: 5px 20px;
+  border: solid 1px rgba(128, 128, 128, 0.548);
+  border-radius: 10px;
+  margin: 5px;
+}
+
+/* .SortibleItemSortingQ:hover{
+
+} */
+
+.SortibleItemSortingQ:focus {
+  background-color: rgba(0, 255, 255, 0.151);
+}
+
+.sheetView {
+  padding: 15px;
+}
+
+.MCQ_SELECTED {
+  background-color: #d0e3fb !important;
+  color: black !important;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.PrintPage {
+  width: 210mm !important;
+  transform: translateX(-5000px);
+  position: absolute;
+  top: -150%;
+}
+
+.CardQustion {
+  page-break-inside: avoid;
+}
+
+.previewPuzzleImage {
+  width: 30%;
+  margin: 20px 35%;
+}
