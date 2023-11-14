@@ -3,6 +3,7 @@ import { useRoutes, Navigate } from "react-router-dom";
 import BlankLayout from "../layout/blankLayout/BlankLayout";
 import SheetView from "../pages/sheet/SheetView";
 import NewSheet from "../pages/NewSheet";
+import Jira from "../pages/Jira";
 
 const Route = (props) => {
   const routes = useRoutes([
@@ -31,6 +32,10 @@ const Route = (props) => {
     {
       path: "/sheets/new",
       element: <NewSheet />,
+    },
+    {
+      path: "/jira",
+      element: <Jira />,
     },
   ]);
 
