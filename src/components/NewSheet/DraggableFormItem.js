@@ -1,8 +1,16 @@
 import React from "react";
 import { useRef } from "react";
 import { useDrag, useDrop } from "react-dnd";
+import { BiCopy } from "react-icons/bi";
 
-const DraggableFormItem = ({ formItem, index, id, moveCard }) => {
+const DraggableFormItem = ({
+  formItem,
+  index,
+  id,
+  moveCard,
+  closeHandler,
+  duplicateHandler,
+}) => {
   const ref = useRef(null);
   const [{ handlerId }, drop2] = useDrop({
     accept: "card",
@@ -60,9 +68,18 @@ const DraggableFormItem = ({ formItem, index, id, moveCard }) => {
     }),
   });
   const opacity = isDragging ? 0 : 1;
+
   drag(drop2(ref));
   return (
-    <div ref={ref} style={{ cursor: "move" }}>
+    <div className="draggable-form-item" ref={ref} style={{ cursor: "move" }}>
+      <div className="control">
+        <div className="close" onClick={() => closeHandler(id)}>
+          x
+        </div>
+        <div onClick={() => duplicateHandler(id)} className="copy">
+          <BiCopy />
+        </div>
+      </div>
       {formItem}
     </div>
   );

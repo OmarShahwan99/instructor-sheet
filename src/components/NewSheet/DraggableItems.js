@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo, useRef, useState } from "react";
 
 import WriteImg from "../../img/write.png";
 import MtImg from "../../img/MT.png";
@@ -11,8 +11,17 @@ import DraggableItem from "./DraggableItem";
 import FormItem from "antd/es/form/FormItem";
 import TextArea from "antd/es/input/TextArea";
 import { Col, Input, Row } from "antd";
+import JoditEditor from "jodit-react";
 
-const DraggableItems = ({ setDraggableFormItems, form }) => {
+const DraggableItems = ({ setDraggableFormItems, form, placeholder }) => {
+  const editor = useRef(null);
+  const [content, setContent] = useState("");
+
+  const config = {
+    readonly: false, // all options from https://xdsoft.net/jodit/docs/,
+    placeholder: placeholder || "Start typings...",
+  };
+
   const items = [
     {
       id: 1,
@@ -21,9 +30,16 @@ const DraggableItems = ({ setDraggableFormItems, form }) => {
       key: "OP_QS",
       formItem: (
         <div style={{ padding: "20px" }}>
-          <h2>Open Question</h2>
+          <h4>Open Question</h4>
           <FormItem>
-            <TextArea></TextArea>
+            <JoditEditor
+              ref={editor}
+              value={content}
+              config={config}
+              tabIndex={1} // tabIndex of textarea
+              onBlur={(newContent) => setContent(newContent)} // preferred to use only this option to update the content for performance reasons
+              onChange={(newContent) => {}}
+            />
           </FormItem>
           <Row gutter={18}>
             <Col md={16}>

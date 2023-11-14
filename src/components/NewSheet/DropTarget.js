@@ -2,7 +2,12 @@ import React, { useRef } from "react";
 import { useDrag, useDrop } from "react-dnd";
 import DraggableFormItem from "./DraggableFormItem";
 
-const DropTarget = ({ draggableFormItems, moveCard }) => {
+const DropTarget = ({
+  draggableFormItems,
+  moveCard,
+  closeHandler,
+  duplicateHandler,
+}) => {
   const [{ canDrop, isOver }, drop] = useDrop(() => ({
     accept: "box",
     drop: () => ({ name: "Dustbin" }),
@@ -42,6 +47,8 @@ const DropTarget = ({ draggableFormItems, moveCard }) => {
           index={index}
           moveCard={moveCard}
           id={item.id}
+          closeHandler={closeHandler}
+          duplicateHandler={duplicateHandler}
         />
       ))}
     </div>

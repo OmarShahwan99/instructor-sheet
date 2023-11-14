@@ -103,3 +103,38 @@
   width: 30%;
   margin: 20px 35%;
 }
+
+.draggable-form-item {
+  position: relative;
+}
+.draggable-form-item .control {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+.draggable-form-item:hover .control {
+  display: flex;
+}
+.draggable-form-item .control .close,
+.draggable-form-item .control .copy {
+  font-size: 18px;
+  border: 1px solid #ccc;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.draggable-form-item .control .close:hover {
+  background-color: rgba(255, 0, 0, 0.606);
+  color: white;
+}
+.draggable-form-item .control .copy:hover {
+  background-color: rgb(41, 198, 41);
+  color: white;
+}
+.draggable-form-item:hover {
+  border: 2px solid rgb(0, 149, 255);
+}
